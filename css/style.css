@@ -206,3 +206,35 @@ footer {
         padding: 1rem;
     }
 }
+/* Mobile navigation fix */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header {
+        align-items: center;
+    }
+}
