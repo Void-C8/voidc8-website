@@ -238,3 +238,52 @@ footer {
         align-items: center;
     }
 }
+/* Base navbar layout */
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Hamburger button */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem 1rem;
+    }
+
+    .logo img {
+        height: 45px; /* smaller logo */
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: #e0e0e0;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 1rem 0;
+        border-radius: 12px;
+    }
+
+    nav ul li {
+        padding: 0.6rem 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
